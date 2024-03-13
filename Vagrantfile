@@ -3,10 +3,11 @@
 
 # ENV['VAGRANT_SERVER_URL']="https://hashicorp-releases.yandexcloud.net/vagrant/"
 ENV['VAGRANT_SERVER_URL']="https://vagrant.elab.pro"
+OS="ubuntu/jammy64"
 
 MACHINES = {
   :inetRouter => {
-        :box_name => "generic/ubuntu2204",
+        :box_name => OS,
         :vm_name => "inetRouter",
         #:public => {:ip => "10.10.10.1", :adapter => 1},
         :net => [   
@@ -17,7 +18,7 @@ MACHINES = {
   },
 
   :centralRouter => {
-        :box_name => "generic/ubuntu2204",
+        :box_name => "ubuntu/jammy64",
         :vm_name => "centralRouter",
         :net => [
                    ["192.168.255.2",  2, "255.255.255.252",  "router-net"],
@@ -31,7 +32,7 @@ MACHINES = {
   },
 
   :centralServer => {
-        :box_name => "generic/ubuntu2204",
+        :box_name => "ubuntu/jammy64",
         :vm_name => "centralServer",
         :net => [
                    ["192.168.0.2",    2, "255.255.255.240",  "dir-net"],
@@ -40,7 +41,7 @@ MACHINES = {
   },
 
   :office1Router => {
-        :box_name => "generic/ubuntu2204",
+        :box_name => "ubuntu/jammy64",
         :vm_name => "office1Router",
         :net => [
                    ["192.168.255.10",  2,  "255.255.255.252",  "office1-central"],
@@ -53,7 +54,7 @@ MACHINES = {
   },
 
   :office1Server => {
-        :box_name => "generic/ubuntu2204",
+        :box_name => "ubuntu/jammy64",
         :vm_name => "office1Server",
         :net => [
                    ["192.168.2.130",  2,  "255.255.255.192",  "managers-net"],
@@ -62,7 +63,7 @@ MACHINES = {
   },
 
   :office2Router => {
-       :box_name => "generic/ubuntu2204",
+       :box_name => "ubuntu/jammy64",
        :vm_name => "office2Router",
        :net => [
                    ["192.168.255.6",  2,  "255.255.255.252",  "office2-central"],
@@ -74,7 +75,7 @@ MACHINES = {
   },
 
   :office2Server => {
-       :box_name => "generic/ubuntu2204",
+       :box_name => "ubuntu/jammy64",
        :vm_name => "office2Server",
        :net => [
                   ["192.168.1.2",    2,  "255.255.255.128",  "dev2-net"],
