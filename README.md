@@ -6,3 +6,5 @@
 ## otus-linux
 
 Используйте этот [Vagrantfile](Vagrantfile) - для тестового стенда.
+Топология сети выглядит следующим образом:
+<img src="./images/LAN.jpeg" alt="LAN.jpeg">

@@ -1,7 +1,6 @@
 # -*- mode: ruby -*-
 # vim: set ft=ruby :
 
-# ENV['VAGRANT_SERVER_URL']="https://hashicorp-releases.yandexcloud.net/vagrant/"
 ENV['VAGRANT_SERVER_URL']="https://vagrant.elab.pro"
 OS="ubuntu/jammy64"
 
